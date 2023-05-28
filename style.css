@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #E5E5E5;
+  --bt-bg-color: hsla(240, 9%, 79%, 1);
+  --sd-bd-color: hsla(194, 97%, 31%, 1);
+}
+
+body {
+  background-color: var(--bg-color);
+
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  gap: 19.2rem;
+
+  align-items: center;
+
+  justify-self: center;
+  align-self: center;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+#timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer {
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  font-family: 'Roboto', sans-serif;
+  
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#controls {
+  display: flex;
+  gap: 4rem
+}
+
+#sounds-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem
+}
+
+#sounds-wrapper button {
+  background-color: var(--bt-bg-color);
+  padding: 4.8rem 4.7rem;
+  border-radius: 2.4rem;
+}
+
+#sounds-wrapper .selected {
+  background-color: var(--sd-bd-color);
+}
+
+#sounds-wrapper svg path {
+  fill: black;
+}
+
+#sounds-wrapper .selected svg path {
+  fill: white;
+}
